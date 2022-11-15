@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between pt-4 bg-white fixed-top">
+        <div class="d-flex gap-4 align-items-center ms-4">
+            <img src="/Assets/blackShoeaLogo20px.png" alt="logo">
+            <h2 class="fw-bold mt-2">My Cart</h2>
+        </div>
+        <div class="mt-2 me-4">
+            <button class="search"><img src="/Assets/icons8-search-30.png" alt="search"></button>
+        </div>
+    </header>
+
+    <main class="main-page">
+        <section class="prod-cart">
+        </section>
+
+        <section class="fixed-bottom">
+            <div class="d-flex mt-3 justify-content-between bg-white ms-4">
+                <div>
+                    <p class="text-secondary mt-2">Total price</p>
+                    <h2 class="total-price fw-bold">$<span class="total-num"></span>.00</h2>
+                </div>
+                <div class="checkout-div">
+                    <button type="button" class="btn btn-dark rounded-pill mt-2 ms-3 checkout-btn">Checkout<img
+                            src="/Assets/icons8-right-arrow-32.png" alt="right arrow" class="arrow-right ms-4"></button>
+                </div>
+            </div>
+            <nav class="bg-white">
+                <button class="nav-btn home-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path
+                            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                    </svg>
+                    <p class="fw-semibold nav-p">Home</p>
+                </button>
+                <button class="nav-btn"><img src="/Assets/icons8-blackshopping-bag-24.png" alt="cart">
+                    <p class="fw-semibold nav-p">Cart</p>
+                </button>
+                <button class="nav-btn orders-btn"><img src="/Assets/orders.png" alt="orders">
+                    <p class="fw-semibold nav-p">Orders</p>
+                </button>
+                <button class="nav-btn"><img src="/Assets/wallet.png" alt="wallet">
+                    <p class="fw-semibold nav-p">Wallet</p>
+                </button>
+                <button class="nav-btn"><img src="/Assets/person.png" alt="profile">
+                    <p class="fw-semibold nav-p">Person</p>
+                </button>
+            </nav>
+        </section>
+
+        <div class="form-popup fixed-bottom bg-white" id="myForm">
+            <div class="text-center mt-2">
+                <h2 class="fw-bold">Remove From Cart?</h2>
+            </div>
+            <div class="line ms-4"></div>
+            <div class="remove-cart">
+                <section class="remove-prod-cart mb-5">
+                    <!-- <div class="d-flex mt-5">
+                        <div class="remove-prod-cart-img ms-4">
+                            <img src="/Assets/airJordan3.png" alt="air jordan 3 retro" class="w-75 ms-3">
+                        </div>
+                        <div>
+                            <div class="d-flex gap-3 ms-4">
+                                <h5 class="fw-bold cart-name">Air Jordan 3 Retro</h5>
+                            </div>
+                            <div class="d-flex gap-2 mt-2 ms-4">
+                                <div class="color-cart-div mt-1"></div>
+                                <p class="text-secondary">Black | Size = <span>42</span></p>
+                            </div>
+                            <div>
+                                <div class="d-flex gap-5 ms-4 mt-1">
+                                    <h4 class="fw-bold">$105.00</h4>
+                                    <div class="d-flex gap-4 me-4">
+                                        <button class="low display-5 low-shoe-btn">-</button>
+                                        <h4 class="shoe-num fw-bold">1</h4>
+                                        <button class="add display-5 add-shoe-btn">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </section>
+            </div>
+            <div class="line ms-4 mb-4"></div>
+            <div class="ms-4 mb-4">
+                <button type="button" class="btn rounded-pill me-2 p-3 cancel-btn" onclick="closeForm()">Cancel</button>
+                <button type="button" class="btn btn-dark rounded-pill ms-2 p-3 yes-btn">Yes, Remove</button>
+            </div>
+        </div>
+        <!-- <div class="remove-cart-background"></div> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

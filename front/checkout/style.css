@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #152536;
+    font-family: "Inter", sans-serif;
+}
+
+.back {
+    margin-top: -0.5rem;
+}
+
+.header-page {
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+.more-btn,
+.edit-btn,
+.back-btn,
+.choose-btn,
+.choose-edit-btn {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+.shipping-address-page,
+.choose-shipping-page,
+.payment-page {
+    display: none;
+}
+
+.address-p {
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line {
+    width: 88%;
+    height: 0.06rem;
+    background-color: rgb(247, 234, 234);
+}
+
+.prod-cart-img {
+    background-color: rgb(249, 245, 245);
+    border-radius: 10%;
+    width: 35%;
+}
+
+.cart-name {
+    width: 11rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.color-cart-div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+.shoes-number {
+    width: 2rem;
+    height: 2rem;
+    margin-top: -2%;
+    background-color: rgb(249, 245, 245);
+}
+
+.promo-input {
+    border: none;
+    padding: 0.1rem 0.5rem;
+    width: 75%;
+}
+
+.promo-input:focus {
+    outline: 2px solid black;
+}
+
+.promo-input::placeholder {
+    color: rgb(201, 199, 199);
+}
+
+.continue,
+.apply,
+.add-new-address {
+    width: 90%;
+}
+
+.add-address {
+    width: 95%;
+}
+
+.add-new-address {
+    background-color: rgb(198, 195, 195) !important;
+}
+
+.new-address-data {
+    border: none;
+    padding: 0.5rem 0.5rem;
+    width: 90%;
+}
+
+.new-address-data:focus {
+    outline: 2px solid black;
+}
+
+.economy-img-div,
+.regular-img-div,
+.cargo-img-div,
+.express-img-div {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden !important;
+    background-color: rgb(0, 0, 0);
+}
+
+.economy-img,
+.regular-img,
+.cargo-img,
+.express-img {
+    padding-top: 35%;
+    padding-left: 30%;
+}
+
+.prices {
+    margin-bottom: 20%;
+}
+
+.add-address-form {
+    display: none;
+}
+
+.payment-popup {
+    display: none;
+    border: 3px solid #f1f1f1;
+    border-radius: 10%;
+    z-index: 9;
+    position: absolute;
+    bottom: 23%;
+    left: 17%;
+    box-shadow: 10px 10px 400px 150px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 10px 400px 150px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 400px 150px rgba(0, 0, 0, 1);
+}
+
+.viewER-btn {
+    background-color: rgb(198, 195, 195) !important;
+}
+
+.viewOrder-btn,
+.viewER-btn {
+    width: 90%;
+}

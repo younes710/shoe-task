@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #152536;
+}
+
+/* Home Page 1 */
+.home-head {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.profile-name {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.prof {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+    border-radius: 48%;
+}
+
+.heart,
+.bell {
+    width: 24px;
+    margin-top: 32px;
+    border: none;
+    background-color: inherit;
+}
+
+.bell {
+    height: 22.07px;
+}
+
+.heart {
+    margin-right: 24px;
+}
+
+.search {
+    background-image: url("/Assets/search-icon.png");
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    width: 380px;
+    height: 37px;
+    padding-left: 40px;
+    margin-top: 8px;
+    margin-left: 24px;
+    border: none;
+}
+
+.brand-btn {
+    width: 60px;
+    height: 60px;
+    margin: 12px 8px;
+    border: none;
+    background-color: #ECECEC;
+}
+
+.brand-img {
+    width: 30px;
+    height: 19px;
+    margin: 20px 15px;
+}
+
+.popular-head {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.see {
+    font-size: 16px;
+    border: none;
+    background-color: inherit;
+    margin-right: 22px;
+}
+
+.brands-scrollbar {
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+.all-btn,
+.all-btn-most {
+    width: 60px;
+}
+
+.nike-btn {
+    width: 75px;
+}
+
+.adidas-btn,
+.reebok-btn {
+    width: 94px;
+}
+
+.puma-btn {
+    width: 84px;
+}
+
+.asics-btn {
+    width: 83px;
+}
+
+.nb-btn {
+    width: 130px;
+}
+
+.converse-btn {
+    width: 105px;
+}
+
+.scrollmenu {
+    height: 50px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.product-card {
+    width: 182px;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+.prod-img {
+    background-color: rgb(247, 242, 242);
+}
+
+.prod-title,
+.prod-price {
+    margin-left: -15px;
+    white-space: nowrap;
+}
+
+.nav-btn {
+    border: none;
+    background-color: inherit;
+    margin-top: 1.3rem;
+    margin-left: 3rem;
+}
+
+.nav-p {
+    font-size: 0.6rem;
+}
+
+.bottom-page,
+.div-bottom {
+    margin-bottom: 56px;
+}
+
+/* Home Page 2 */
+.home-page2 {
+    display: none;
+}
+
+.head-page2 {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 24px;
+    gap: 24px;
+}
+
+.backHome,
+.back-to-home {
+    cursor: pointer;
+}
+
+.most-pop {
+    font-size: 20px;
+}
+
+.scrollmenu-page2 {
+    margin-top: 16px;
+}
+
+/* Home Page 3 */
+.home-page3 {
+    display: none;
+}
+
+.head-page3 {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 24px;
+    gap: 24px;
+}
+
+.brand-page-title {
+    font-size: 20px;
+}
+
+.brand-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cart-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

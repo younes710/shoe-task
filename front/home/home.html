@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script defer src="home.js"></script>
+</head>
+
+<body>
+    <main class="main-page">
+        <!-- Home Page 1 -->
+        <article class="home-page1">
+            <section class="home-head">
+                <div class="profile-name">
+                    <img src="/Assets/profile.png" alt="profile" class="prof">
+                    <p>
+                        Good Morning 👋<br><strong>Younes Abdi</strong>
+                    </p>
+                </div>
+                <div>
+                    <button class="bell"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg></button>
+                    <button class="heart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <input type="text" class="search" placeholder="Search">
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        <button class="rounded-circle brand-btn nike-logo" onclick="getBrandProducts('nike')"><img
+                                src="/Assets/nike.png" alt="Nike" class="brand-img"></button>
+                        <p class="fw-semibold ms-4 brand">Nike</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('adidas')"><img
+                                src="/Assets/adidas.png" alt="Adidas" class="brand-img"></button>
+                        <p class="fw-semibold ms-3 brand">Adidas</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('puma')"><img
+                                src="/Assets/puma.png" alt="Puma" class="brand-img"></button>
+                        <p class="fw-semibold ms-3 brand">Puma</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('asics')"><img
+                                src="/Assets/asics.png" alt="Asics" class="brand-img"></button>
+                        <p class="fw-semibold ms-3 brand">Asics</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('reebok')"><img
+                                src="/Assets/reebok.png" alt="Reebok" class="brand-img"></button>
+                        <p class="fw-semibold ms-3 brand">Reebok</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('newBalance')"><img
+                                src="/Assets/nb.png" alt="New Balance" class="brand-img"></button>
+                        <p class="fw-semibold ms-2 brand">New Ba..</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn" onclick="getBrandProducts('converse')"><img
+                                src="/Assets/converse.png" alt="Converse" class="brand-img"></button>
+                        <p class="fw-semibold ms-1 brand">Converse</p>
+                    </div>
+                    <div class="col">
+                        <button class="rounded-circle brand-btn"><img src="/Assets/more.png" alt="More"
+                                class="brand-img"></button>
+                        <p class="fw-semibold ms-2 brand">More ..</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="popular-head">
+                    <p class="fw-bold my-1">Most Popular</p>
+                    <button class="fw-semibold see">See All</button>
+                </div>
+                <div class="brands-scrollbar scrollmenu">
+                    <button type="button" class="btn btn-dark rounded-pill all-btn"
+                        onclick="homeBrands('all')">All</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 nike-btn"
+                        onclick="brandClicked();homeBrands('nike')">Nike</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 adidas-btn"
+                        onclick="brandClicked();homeBrands('adidas')">Adidas</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 puma-btn"
+                        onclick="brandClicked();homeBrands('puma')">Puma</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 asics-btn"
+                        onclick="brandClicked();homeBrands('asics')">Asics</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 reebok-btn"
+                        onclick="brandClicked();homeBrands('reebok')">Reebok</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 nb-btn"
+                        onclick="brandClicked();homeBrands('newBalance')">New Balance</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 converse-btn"
+                        onclick="brandClicked();homeBrands('converse')">Converse</button>
+                </div>
+            </section>
+            <section class="container mt-4 all-section">
+            </section>
+
+            <nav class="fixed-bottom bg-white">
+                <button class="nav-btn"><img src="/Assets/home.png" alt="home">
+                    <p class="fw-semibold nav-p">Home</p>
+                </button>
+                <button class="nav-btn cart-btn"><img src="/Assets/cart.png" alt="cart">
+                    <p class="fw-semibold nav-p">Cart</p>
+                </button>
+                <button class="nav-btn orders-btn"><img src="/Assets/orders.png" alt="orders">
+                    <p class="fw-semibold nav-p">Orders</p>
+                </button>
+                <button class="nav-btn"><img src="/Assets/wallet.png" alt="wallet">
+                    <p class="fw-semibold nav-p">Wallet</p>
+                </button>
+                <button class="nav-btn"><img src="/Assets/person.png" alt="profile">
+                    <p class="fw-semibold nav-p">Person</p>
+                </button>
+            </nav>
+        </article>
+
+        <!-- Home Page 2 -->
+        <article class="home-page2">
+            <section class="head-page2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    class="bi bi-arrow-left arrow-left backHome" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+                <p class="fw-bold most-pop">all</p>
+            </section>
+            <section>
+                <div class="brands-scrollbar scrollmenu scrollmenu-page2">
+                    <button type="button" class="btn btn-dark rounded-pill all-btn-most"
+                        onclick="popularPageBrands('all')">All</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 nike-btn"
+                        onclick="mostBrandClicked();popularPageBrands('nike')">Nike</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 adidas-btn"
+                        onclick="mostBrandClicked();popularPageBrands('adidas')">Adidas</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 puma-btn"
+                        onclick="mostBrandClicked();popularPageBrands('puma')">Puma</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 asics-btn"
+                        onclick="mostBrandClicked();popularPageBrands('asics')">Asics</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 reebok-btn"
+                        onclick="mostBrandClicked();popularPageBrands('reebok')">Reebok</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 nb-btn"
+                        onclick="mostBrandClicked();popularPageBrands('newBalance')">New Balance</button>
+                    <button type="button" class="btn btn-outline-dark rounded-pill ms-2 converse-btn"
+                        onclick="mostBrandClicked();popularPageBrands('converse')">Converse</button>
+                </div>
+            </section>
+            <section class="container mt-4 popular-page">
+            </section>
+        </article>
+
+        <!-- Home Page 3 -->
+        <article class="home-page3">
+            <section class="head-page3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    class="bi bi-arrow-left arrow-left back-to-home" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+                <p class="fw-bold brand-page-title"></p>
+            </section>
+            <section class="container mt-2">
+                <div class="brand-row">
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

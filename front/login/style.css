@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #152536;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    height: 56px;
+}
+
+.back {
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+.back-btn {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+.logo {
+    margin-top: 18%;
+    margin-left: 44%;
+}
+
+.text {
+    margin-top: 150px;
+    margin-left: 41px;
+}
+
+.email,
+.pass {
+    width: 380px;
+    height: 37px;
+    border: none;
+    margin-left: 24px;
+}
+
+.email {
+    margin-top: 48px;
+    background-image: url("/Assets/icons8-mail-24.png");
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding-left: 40px;
+}
+
+.pass {
+    margin-top: 21px;
+    background-image: url("/Assets/icons8-lock-24.png");
+    background-position: 11px 11px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding-left: 40px;
+}
+
+.check {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wrong-toast {
+    display: none;
+}
+
+.signIn-page-btn,
+.back-login-btn,
+.login-btn,
+.signIn-btn {
+    width: 380px;
+    height: 47px;
+    border: none;
+}
+
+.login-btn,
+.signIn-page-btn {
+    background-color: #212529;
+    margin-bottom: 2%;
+}
+
+.signIn-btn,
+.back-login-btn {
+    background-color: rgb(198, 195, 195);
+}
+
+.logIn {
+    margin-top: 25%;
+}
+
+.signIn {
+    margin-top: 50%;
+}

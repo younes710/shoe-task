@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between pt-4 bg-white fixed-top">
+        <div class="d-flex gap-4 align-items-center ms-4">
+            <img src="/Assets/blackShoeaLogo20px.png" alt="logo">
+            <h2 class="fw-bold mt-2">My Orders</h2>
+        </div>
+        <div class="mt-2 me-4">
+            <button class="search"><img src="/Assets/icons8-search-30.png" alt="search"></button>
+            <button class="more"><img src="/Assets/icons8-view-more-32.png" alt="more"></button>
+        </div>
+    </header>
+    <main class="main-page">
+        <div class="fixed-top bg-white main-top">
+            <div class="d-flex justify-content-between mx-5 mt-4">
+                <button class="active-btn ms-5">
+                    <h5 class="active-h5">Active</h5>
+                </button>
+                <button class="completed-btn me-4">
+                    <h5 class="completed-h5">Completed</h5>
+                </button>
+            </div>
+            <div class="d-flex">
+                <div class="active-line ms-4 mt-2"></div>
+                <div class="completed-line me-4 mt-2"></div>
+            </div>
+        </div>
+
+        <section class="prod-cart">
+            <div class="text-center paste">
+                <img src="/Assets/paste-256.png" alt="paste image">
+                <h4 class="fw-bold mt-5">You don't have an order yet</h4>
+                <p class="orders-p">You don't have an active orders at this time</p>
+            </div>
+        </section>
+
+        <section class="prod-cart">
+            <div class="text-center paste2">
+                <img src="/Assets/paste-256.png" alt="paste image">
+                <h4 class="fw-bold mt-5">You don't have an order yet</h4>
+                <p class="orders-p">You don't have an completed orders at this time</p>
+            </div>
+            <!-- <div class="prod-cart-div d-flex mt-5">
+                <div class="prod-cart-img ms-3">
+                    <img src="/Assets/airJordan3.png" alt="air jordan 3 retro" class="w-75 ms-3 mt-3">
+                </div>
+                <div>
+                    <div class="d-flex gap-3 ms-3">
+                        <h5 class="fw-bold cart-name">Air Jordan 3 Retro rererer</h5>
+                    </div>
+                    <div class="d-flex gap-2 mt-1 ms-3">
+                        <div class="color-cart-div mt-1"></div>
+                        <p class="text-secondary cart-p">Silver | Size = <span>42</span> | Qty = <span>1</span></p>
+                    </div>
+                    <div>
+                        <p class="completed-tag ms-3 ps-2">Completed</p>
+                    </div>
+                    <div>
+                        <div class="d-flex gap-4 ms-3">
+                            <h4 class="fw-bold">$105.00</h4>
+                            <button class="btn btn-dark rounded-pill px-3 track-btn">Buy Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <nav class="bg-white fixed-bottom">
+            <button class="nav-btn home-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path
+                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+                </svg>
+                <p class="fw-semibold nav-p">Home</p>
+            </button>
+            <button class="nav-btn cart-btn"><img src="/Assets/cart.png" alt="cart">
+                <p class="fw-semibold nav-p">Cart</p>
+            </button>
+            <button class="nav-btn"><img src="/Assets/icons8-shopping-cart-24.png" alt="orders">
+                <p class="fw-semibold nav-p">Orders</p>
+            </button>
+            <button class="nav-btn"><img src="/Assets/wallet.png" alt="wallet">
+                <p class="fw-semibold nav-p">Wallet</p>
+            </button>
+            <button class="nav-btn"><img src="/Assets/person.png" alt="profile">
+                <p class="fw-semibold nav-p">Person</p>
+            </button>
+        </nav>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
